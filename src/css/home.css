@@ -1,0 +1,185 @@
+/* ---------- Hero Section ---------- */
+.hero {
+  background-image: url('https://images.unsplash.com/photo-1558981403-c5f9899a28bc?auto=format&fit=crop&w=1600&q=80');
+  background-size: cover;
+  background-position: center;
+  min-height: 480px;
+  display: flex;
+  align-items: center;
+}
+
+.hero-overlay {
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.55);
+  min-height: 480px;
+  display: flex;
+  align-items: center;
+}
+
+.hero-content {
+  color: var(--white);
+  max-width: 600px;
+}
+
+.hero-content h1 {
+  font-size: 42px;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+.hero-content p {
+  font-size: 16px;
+  margin-bottom: 25px;
+  color: #eeeeee;
+}
+
+.hero-buttons {
+  display: flex;
+  gap: 15px;
+}
+
+/* ---------- Welcome Section ---------- */
+.welcome-section {
+  text-align: center;
+  padding: 60px 0 30px;
+}
+
+.welcome-section .section-subtitle {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+/* ---------- Featured Bikes ---------- */
+.featured-section {
+  padding: 40px 0 60px;
+}
+
+.bikes-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+}
+
+.view-all-wrapper {
+  text-align: center;
+  margin-top: 35px;
+}
+
+/* ---------- Why Choose Us ---------- */
+.why-us-section {
+  background-color: var(--white);
+  padding: 60px 0;
+}
+
+.why-us-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 25px;
+}
+
+.why-us-item {
+  text-align: center;
+  padding: 20px;
+}
+
+.why-us-item h3 {
+  font-size: 18px;
+  color: var(--primary-color);
+  margin-bottom: 10px;
+}
+
+.why-us-item p {
+  font-size: 14px;
+  color: var(--text-light);
+}
+
+/* ---------- Testimonials ---------- */
+.testimonials-section {
+  padding: 60px 0;
+}
+
+.testimonials-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+}
+
+.testimonial-card {
+  background-color: var(--white);
+  padding: 25px;
+  border-radius: var(--border-radius);
+  box-shadow: var(--box-shadow);
+}
+
+.testimonial-text {
+  font-size: 14px;
+  color: var(--text-light);
+  font-style: italic;
+  margin-bottom: 15px;
+}
+
+.testimonial-footer h4 {
+  font-size: 15px;
+  color: var(--secondary-color);
+}
+
+.testimonial-footer span {
+  font-size: 13px;
+  color: var(--text-light);
+}
+
+/* ---------- Call To Action ---------- */
+.cta-section {
+  background-color: var(--primary-color);
+  padding: 50px 0;
+}
+
+.cta-content {
+  text-align: center;
+  color: var(--white);
+}
+
+.cta-content h2 {
+  font-size: 26px;
+  margin-bottom: 10px;
+}
+
+.cta-content p {
+  margin-bottom: 20px;
+  color: #ffe5e5;
+}
+
+/* ---------- Responsive ---------- */
+@media (max-width: 900px) {
+  .bikes-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .why-us-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .testimonials-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .hero-content h1 {
+    font-size: 32px;
+  }
+}
+
+@media (max-width: 600px) {
+  .bikes-grid,
+  .why-us-grid,
+  .testimonials-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .hero-content h1 {
+    font-size: 26px;
+  }
+
+  .hero-buttons {
+    flex-direction: column;
+  }
+}
